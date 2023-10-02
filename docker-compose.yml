@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  certbot:
+    image: ubuntu-certbot:22.04
+    container_name: ubuntu-certbot
+    volumes:
+      - ./tmp:/tmp
+    ports: 
+      - "8078:80"
